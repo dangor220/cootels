@@ -36,6 +36,9 @@ $lightBlue: #848FAC;
   &__logo {
     padding: 16px 32px;
   }
+  &__about {
+    padding: 16px 32px;
+  }
 }
 
 // ************Title****************
@@ -49,6 +52,29 @@ $lightBlue: #848FAC;
   &__logo {
     font-size: 48px;
     margin-bottom: 24px;
+  }
+  &__about {
+    margin-bottom: 24px;
+  }
+}
+
+//************Text****************
+
+.text {
+  color: $lightBlue;
+  &__logo {
+    max-width: 92%;
+    margin-bottom: 32px;
+  }
+  &__about {
+    max-width: 82%;
+    margin-bottom: 32px;
+    &_mb {
+      margin-bottom: 16px;
+    }
+    &_mw {
+      min-width: 92%;
+    }
   }
 }
 
@@ -91,20 +117,15 @@ $lightBlue: #848FAC;
   display: flex;
   padding: 80px 0 160px 0;
   align-items:center;
+  justify-content: space-between;
 
   &__wrapper {
-    flex: 1 1 50%;
-    // padding-top: 126px;
-  }
-  &__subtitle {
-    max-width: 82%;
-    color: $lightBlue;
-    margin-bottom: 32px;
+    flex-basis: 523px;
   }
   
   &__image {
     display: flex;
-    flex: 0 0 590px;
+    flex: 0 1 590px;
     max-height: 588px;
   }
   &__item {
@@ -126,3 +147,42 @@ $lightBlue: #848FAC;
 }
 
 // ************About***************
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 80px 0;
+
+  &__image {
+    flex: 0 0 384px;
+  }
+  &__wrapper {
+    flex-basis: 615px;
+  }
+}
+
+// ************Scope***************
+
+.scope {
+  padding: 80px 0;
+  
+  &__activities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    &_mb {
+      margin-bottom: 32px;
+    }
+  }
+  &__wrapper {
+    flex-basis: 584px;
+    
+    .text__about_mr {
+    max-width: 100%;
+  }
+  }
+  
+}

@@ -118,6 +118,10 @@ body {
   padding: 16px 32px;
 }
 
+.button__about {
+  padding: 16px 32px;
+}
+
 .title {
   font-family: Montserrat, sans-serif;
   font-size: 36px;
@@ -129,6 +133,32 @@ body {
 .title__logo {
   font-size: 48px;
   margin-bottom: 24px;
+}
+
+.title__about {
+  margin-bottom: 24px;
+}
+
+.text {
+  color: #848FAC;
+}
+
+.text__logo {
+  max-width: 92%;
+  margin-bottom: 32px;
+}
+
+.text__about {
+  max-width: 82%;
+  margin-bottom: 32px;
+}
+
+.text__about_mb {
+  margin-bottom: 16px;
+}
+
+.text__about_mw {
+  min-width: 92%;
 }
 
 .header__wrapper {
@@ -179,18 +209,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo__wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-}
-
-.logo__subtitle {
-  max-width: 82%;
-  color: #848FAC;
-  margin-bottom: 32px;
+  -ms-flex-preferred-size: 523px;
+      flex-basis: 523px;
 }
 
 .logo__image {
@@ -198,8 +224,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 590px;
-          flex: 0 0 590px;
+      -ms-flex: 0 1 590px;
+          flex: 0 1 590px;
   max-height: 588px;
 }
 
@@ -220,4 +246,59 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  padding: 80px 0;
+}
+
+.about__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 384px;
+          flex: 0 0 384px;
+}
+
+.about__wrapper {
+  -ms-flex-preferred-size: 615px;
+      flex-basis: 615px;
+}
+
+.scope {
+  padding: 80px 0;
+}
+
+.scope__activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.scope__activities_mb {
+  margin-bottom: 32px;
+}
+
+.scope__wrapper {
+  -ms-flex-preferred-size: 584px;
+      flex-basis: 584px;
+}
+
+.scope__wrapper .text__about_mr {
+  max-width: 100%;
 }
