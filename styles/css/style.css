@@ -114,12 +114,12 @@ body {
   padding: 14px 16px;
 }
 
-.button__logo {
+.button__logo, .button__about, .button__rooms, .button__connection {
   padding: 16px 32px;
 }
 
-.button__about {
-  padding: 16px 32px;
+.button__rooms {
+  margin-bottom: 104px;
 }
 
 .title {
@@ -135,7 +135,7 @@ body {
   margin-bottom: 24px;
 }
 
-.title__about {
+.title__about, .title__rooms, .title__connection {
   margin-bottom: 24px;
 }
 
@@ -159,6 +159,17 @@ body {
 
 .text__about_mw {
   min-width: 92%;
+}
+
+.text__rooms {
+  text-align: center;
+  max-width: 50%;
+  margin-bottom: 32px;
+}
+
+.text__connection {
+  max-width: 92%;
+  margin-bottom: 32px;
 }
 
 .header__wrapper {
@@ -301,4 +312,217 @@ body {
 
 .scope__wrapper .text__about_mr {
   max-width: 100%;
+}
+
+.rooms {
+  padding: 80px 0;
+}
+
+.rooms__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rooms__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 23px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
+}
+
+.rooms__item {
+  max-width: 384px;
+}
+
+.rooms__image {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+.rooms__img {
+  width: 100%;
+}
+
+.rooms__image-text {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.rooms__image-subtext {
+  margin-bottom: 32px;
+}
+
+.rooms__more {
+  color: #424F7B;
+  max-width: 97px;
+  position: relative;
+  cursor: pointer;
+}
+
+.rooms__more:before {
+  content: '';
+  background: url("../../assets/images/rooms/arrowMore.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -32px;
+  top: 4.5px;
+}
+
+.connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.connection__contact {
+  max-width: 417px;
+}
+
+.connection__steps {
+  min-width: 588px;
+}
+
+.connection__suptext {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.connection__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connection__more {
+  margin-left: 24px;
+  font-size: 16px;
+  line-height: 94.73684%;
+  cursor: pointer;
+  color: #0E1734;
+}
+
+.connection__step-item {
+  padding: 32px 36px;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+  margin-bottom: 24px;
+  border-radius: 4px;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+  cursor: pointer;
+}
+
+.connection__step-item:hover {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.connection__step-title {
+  position: relative;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  color: #424F7B;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.connection__step-title:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFECE2;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.connection__step-title:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/images/connection/arrowDown.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 4px;
+  right: 8px;
+  z-index: 2;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.connection__step-title_active:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FF620A;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.connection__step-title_active:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/images/connection/arrowUp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 2px;
+  right: 8px;
+  z-index: 3;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.connection__step-descr {
+  display: none;
+  max-width: 516px;
+  margin-top: 24px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.connection__step-descr_show {
+  display: block;
+  position: static;
 }

@@ -19,6 +19,7 @@ body {
 $blue: #192252;
 $darkBlue: #0E1734;
 $lightBlue: #848FAC;
+$more: #424F7B;
 
 
 // ************Button***************
@@ -33,11 +34,11 @@ $lightBlue: #848FAC;
   &__header {
     padding: 14px 16px;
   }
-  &__logo {
+  &__logo, &__about, &__rooms, &__connection  {
     padding: 16px 32px;
   }
-  &__about {
-    padding: 16px 32px;
+  &__rooms {
+    margin-bottom: 104px;
   }
 }
 
@@ -53,7 +54,7 @@ $lightBlue: #848FAC;
     font-size: 48px;
     margin-bottom: 24px;
   }
-  &__about {
+  &__about, &__rooms, &__connection  {
     margin-bottom: 24px;
   }
 }
@@ -76,6 +77,16 @@ $lightBlue: #848FAC;
       min-width: 92%;
     }
   }
+  &__rooms {
+    text-align: center;
+    max-width: 50%;
+    margin-bottom: 32px;
+  }
+  &__connection {
+    max-width: 92%;
+    margin-bottom: 32px;
+  }
+
 }
 
 // ************Header***************
@@ -185,4 +196,171 @@ $lightBlue: #848FAC;
   }
   }
   
+}
+
+// ************Rooms***************
+
+.rooms {
+  padding: 80px 0;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    flex: 1 1 33.3333%;
+  }
+  &__item {
+    max-width: 384px;
+  }
+  &__image {
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__image-text {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+  &__image-subtext {
+    margin-bottom: 32px;
+  }
+  &__more {
+    color: #424F7B;
+    max-width: 97px;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: '';
+      background: url('../../assets/images/rooms/arrowMore.svg');
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: -32px;
+      top: 4.5px
+    }
+  }
+}
+
+// ************Connection*************** 
+
+.connection {
+  display: flex;
+  padding: 80px 0;
+  justify-content: space-between;
+  align-content: center;
+
+  &__contact {
+    max-width: 417px;
+  }
+  &__steps {
+    min-width: 588px;
+  }
+  &__suptext{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+  &__more {
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: (18 / 19) * 100%;
+    cursor: pointer;
+    color: #0E1734;
+  }
+  &__step-item {
+    padding: 32px 36px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+    margin-bottom: 24px;
+    border-radius: 4px;
+    transition: all 0.6s linear;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__step-title {
+    position: relative;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: $more;
+    transition: all 0.3s linear;
+    &:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #FFECE2;
+      position: absolute;
+      top: -6px;
+      right: 0;
+      transition: all 0.3s linear;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: url('../../assets/images/connection/arrowDown.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 4px;
+      right: 8px;
+      z-index: 2;
+      transition: all 0.3s linear;
+    }
+    &_active {
+      &:after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #FF620A;
+        position: absolute;
+        top: -6px;
+        right: 0;
+        z-index: 1;
+        transition: all 0.3s linear;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url('../../assets/images/connection/arrowUp.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 2px;
+        right: 8px;
+        z-index: 3;
+        transition: all 0.3s linear;
+      }
+    }
+  }
+  &__step-descr {
+    display: none;
+    max-width: 516px;
+    margin-top: 24px;
+    transition: all 0.3s linear;
+    &_show {
+      display: block;
+      position: static;
+    }
+  }
 }
