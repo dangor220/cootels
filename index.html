@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cootels</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="styles/css/style.css" />
   </head>
   <body>
@@ -13,15 +14,20 @@
         <div class="header__wrapper">
           <div class="header__logo">Cootels</div>
           <nav class="header__nav">
+            <div class="header__nav-burger">
+              <span class="line line__one"></span>
+              <span class="line line__two"></span>
+              <span class="line line__three"></span>
+            </div>
             <ul class="header__list">
               <li class="header__item">
-                <a href="#" class="header__link">Rooms</a>
+                <a href="#rooms" class="header__link">Rooms</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">Reservation</a>
+                <a href="#reservation" class="header__link">Reservation</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">Contacs</a>
+                <a href="#contacts" class="header__link">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -30,7 +36,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="reservation">
       <div class="container">
         <div class="logo">
           <div class="logo__wrapper">
@@ -132,37 +138,68 @@
           </div>
         </div>
 
-        <div class="rooms">
+        <div class="rooms" id="rooms">
           <div class="rooms__title">
             <h2 class="title title__rooms">Many Rooms to Choose</h2>
-            <div class="text text__rooms">There is a room for every needs. We have room for individuals until family size, we also have a cabin for more private experience</div>
+            <div class="text text__rooms">
+              There is a room for every needs. We have room for individuals
+              until family size, we also have a cabin for more private
+              experience
+            </div>
             <button class="button button__rooms">Explore more</button>
           </div>
 
           <div class="rooms__wrapper">
             <div class="rooms__item">
               <div class="rooms__image">
-                <img src="assets/images/rooms/room__one.png" alt="room__one" class="rooms__img">
+                <img
+                  src="assets/images/rooms/room__one.png"
+                  alt="room__one"
+                  class="rooms__img"
+                />
               </div>
               <div class="rooms__image-text">Single Room</div>
-              <div class="text rooms__image-subtext">Best for a brave lone wolf who need comfort and quiet quality time, but you still have a chance to meet others.</div>
-              <div class="rooms__more">Learn more</div>
+              <div class="text rooms__image-subtext">
+                Best for a brave lone wolf who need comfort and quiet quality
+                time, but you still have a chance to meet others.
+              </div>
+              <div class="rooms__more">
+                <a href="#" class="rooms__link">Learn more</a>
+              </div>
             </div>
             <div class="rooms__item">
               <div class="rooms__image">
-                <img src="assets/images/rooms/room__two.png" alt="room__two" class="rooms__img">
+                <img
+                  src="assets/images/rooms/room__two.png"
+                  alt="room__two"
+                  class="rooms__img"
+                />
               </div>
               <div class="rooms__image-text">Double Room</div>
-              <div class="text rooms__image-subtext">Best for couple, seek happiness in intimacy without worry of being disturbed. Feel the whole world just for you two.</div>
-              <div class="rooms__more">Learn more</div>
+              <div class="text rooms__image-subtext">
+                Best for couple, seek happiness in intimacy without worry of
+                being disturbed. Feel the whole world just for you two.
+              </div>
+              <div class="rooms__more">
+                <a href="#" class="rooms__link">Learn more</a>
+              </div>
             </div>
             <div class="rooms__item">
               <div class="rooms__image">
-                <img src="assets/images/rooms/room__three.png" alt="room__three" class="rooms__img">
+                <img
+                  src="assets/images/rooms/room__three.png"
+                  alt="room__three"
+                  class="rooms__img"
+                />
               </div>
               <div class="rooms__image-text">Cootage</div>
-              <div class="text rooms__image-subtext">Best for family or group. One cootage can fit up to 5 people. Made stronger bond with your family or friends.</div>
-              <div class="rooms__more">Learn more</div>
+              <div class="text rooms__image-subtext">
+                Best for family or group. One cootage can fit up to 5 people.
+                Made stronger bond with your family or friends.
+              </div>
+              <div class="rooms__more">
+                <a href="#" class="rooms__link">Learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -172,32 +209,200 @@
             <div class="connection__suptext">Start your journey!</div>
             <h2 class="title title__connection">How to Get My Room?</h2>
             <div class="text text__connection">
-              You can contact us by phone or email us. Easily tap the contact button below and it will take you to our contact point
+              You can contact us by phone or email us. Easily tap the contact
+              button below and it will take you to our contact point
             </div>
             <div class="connection__button">
               <button class="button button__connection">Contact us</button>
               <div class="connection__more">Explore more room</div>
             </div>
-            
           </div>
           <div class="connection__steps">
             <div class="connection__step-item">
-              <div class="connection__step-title connection__step-title_active">1. Choose a room and date</div>
-              <p class="text connection__step-descr connection__step-descr_show">Contact us via phone or email, ask for availability of you choice of room. We might offer you something exciting.</p>
+              <div class="connection__step-title connection__step-title_active">
+                1. Choose a room and date
+              </div>
+              <p
+                class="text connection__step-descr connection__step-descr_show"
+              >
+                Contact us via phone or email, ask for availability of you
+                choice of room. We might offer you something exciting.
+              </p>
             </div>
             <div class="connection__step-item">
-              <div class="connection__step-title">2. Check for room availability</div>
-              <p class="text connection__step-descr">Contact us via phone or email, ask for availability of you choice of room. We might offer you something exciting.</p>
+              <div class="connection__step-title">
+                2. Check for room availability
+              </div>
+              <p class="text connection__step-descr">
+                Contact us via phone or email, ask for availability of you
+                choice of room. We might offer you something exciting.
+              </p>
             </div>
             <div class="connection__step-item">
               <div class="connection__step-title">3. Enjoy your room</div>
-              <p class="text connection__step-descr">Contact us via phone or email, ask for availability of you choice of room. We might offer you something exciting.</p>
+              <p class="text connection__step-descr">
+                Contact us via phone or email, ask for availability of you
+                choice of room. We might offer you something exciting.
+              </p>
             </div>
           </div>
         </div>
 
+        <div class="clients">
+          <h2 class="title title__clients">Hear From Our Happy Customers</h2>
+          <div class="slider">
+            <div class="slider__item">
+              <img
+                src="assets/images/clients/image__01.png"
+                alt="clients"
+                class="slider__image"
+              />
+              <div class="text slider__text">
+                “Great service, great food, great people. The scenery is also
+                beautiful, you can do so much activity even with your famility.
+                Worth every penny! you should come and see for your self. 5 out
+                of 5! the waffle is great!”
+              </div>
+              <div class="slider__name">Kirana Dunham</div>
+            </div>
+            <div class="slider__item">
+              <img
+                src="assets/images/clients/image__01.png"
+                alt="clients"
+                class="slider__image"
+              />
+              <div class="text slider__text">
+                “Great service, great food, great people. The scenery is also
+                beautiful, you can do so much activity even with your famility.
+                Worth every penny! you should come and see for your self. 5 out
+                of 5! the waffle is great!”
+              </div>
+              <div class="slider__name">Kirana Dunham</div>
+            </div>
+            <div class="slider__item">
+              <img
+                src="assets/images/clients/image__01.png"
+                alt="clients"
+                class="slider__image"
+              />
+              <div class="text slider__text">
+                “Great service, great food, great people. The scenery is also
+                beautiful, you can do so much activity even with your famility.
+                Worth every penny! you should come and see for your self. 5 out
+                of 5! the waffle is great!”
+              </div>
+              <div class="slider__name">Kirana Dunham</div>
+            </div>
+            <div class="slider__item">
+              <img
+                src="assets/images/clients/image__01.png"
+                alt="clients"
+                class="slider__image"
+              />
+              <div class="text slider__text">
+                “Great service, great food, great people. The scenery is also
+                beautiful, you can do so much activity even with your famility.
+                Worth every penny! you should come and see for your self. 5 out
+                of 5! the waffle is great!”
+              </div>
+              <div class="slider__name">Kirana Dunham</div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <div class="footer__title">Cootels</div>
+            <div class="footer__subtitle">
+              Your Best Private Hideway From Crowd. Back to Nature.
+            </div>
+            <div class="footer__social">
+              <div class="footer__item">
+                <a href="" class="footer__item-link"
+                  ><img
+                    src="assets/images/footer/twitter.svg"
+                    alt="twitter"
+                    class="footer__icon"
+                /></a>
+              </div>
+              <div class="footer__item">
+                <a href="" class="footer__item-link">
+                  <img
+                    src="assets/images/footer/instagram.svg"
+                    alt="instagram"
+                    class="footer__icon"
+                /></a>
+              </div>
+              <div class="footer__item">
+                <a href="" class="footer__item-link"
+                  ><img
+                    src="assets/images/footer/facebook.svg"
+                    alt="facebook"
+                    class="footer__icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__list">
+            <div class="footer__list-item">
+              <div class="footer__list-title">Rooms</div>
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Single Room</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Double Room</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Cabin</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Custom Room</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__list-item">
+              <div class="footer__list-title">Reservation</div>
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">See the Steps</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Best Time</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__list-item">
+              <div class="footer__list-title">Contact</div>
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Our Number</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Our Email</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Our Location</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
