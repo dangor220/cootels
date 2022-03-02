@@ -7,4 +7,4 @@
 * HTML
 * CSS/SCSS
 * JS
-* SlickClider
+* SlickSlider
