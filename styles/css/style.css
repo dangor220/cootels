@@ -801,7 +801,6 @@ body.active__burger {
 
 .rooms__link {
   display: block;
-  width: 120px;
   color: #424f7b;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
