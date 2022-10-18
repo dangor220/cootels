@@ -1,6 +1,6 @@
 # Cootels
 
-##  https://dangor220.github.io/Cootels/
+##  https://dangor220.github.io/cootels/
 
 ## Used technologies:
 
