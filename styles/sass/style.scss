@@ -1,5 +1,5 @@
-@import "nullstyle";
-@import "fonts";
+@import 'nullstyle';
+@import 'fonts';
 
 * {
   scroll-behavior: smooth;
@@ -55,8 +55,6 @@ $more: #424f7b;
 
   &__header {
     padding: 14px 16px;
-    &_active {
-    }
   }
   &__logo,
   &__about,
@@ -194,7 +192,7 @@ $more: #424f7b;
     position: relative;
     transition: all 0.3s linear;
     &:after {
-      content: "";
+      content: '';
       height: 2px;
       width: 0;
       background: $blue;
@@ -205,7 +203,7 @@ $more: #424f7b;
     }
     &:hover {
       &:after {
-        content: "";
+        content: '';
         width: 100%;
         left: 0;
       }
@@ -223,7 +221,7 @@ $more: #424f7b;
       order: 1;
     }
     .button__header {
-      order: 2;
+      display: none;
     }
     &__list {
       background-color: #fff;
@@ -500,8 +498,8 @@ $more: #424f7b;
     position: relative;
     cursor: pointer;
     &:before {
-      content: "";
-      background: url("../../assets/images/rooms/arrowMore.svg");
+      content: '';
+      background: url('../../assets/images/rooms/arrowMore.svg');
       width: 20px;
       height: 20px;
       position: absolute;
@@ -525,6 +523,7 @@ $more: #424f7b;
   &__link {
     display: block;
     color: #424f7b;
+    font-size: 16px;
     transition: all 0.3s linear;
   }
 }
@@ -602,7 +601,7 @@ $more: #424f7b;
     transition: all 0.3s linear;
     padding-right: 50px;
     &:after {
-      content: "";
+      content: '';
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -613,11 +612,11 @@ $more: #424f7b;
       transition: all 0.3s linear;
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 24px;
       height: 24px;
-      background: url("../../assets/images/connection/arrowDown.svg");
+      background: url('../../assets/images/connection/arrowDown.svg');
       background-repeat: no-repeat;
       background-size: cover;
       top: 4px;
@@ -627,7 +626,7 @@ $more: #424f7b;
     }
     &_active {
       &:after {
-        content: "";
+        content: '';
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -639,11 +638,11 @@ $more: #424f7b;
         transition: all 0.3s linear;
       }
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 24px;
         height: 24px;
-        background: url("../../assets/images/connection/arrowUp.svg");
+        background: url('../../assets/images/connection/arrowUp.svg');
         background-repeat: no-repeat;
         background-size: cover;
         top: 2px;
@@ -831,7 +830,7 @@ $more: #424f7b;
 
     @media (max-width: 767px) {
       &:after {
-        content: "";
+        content: '';
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -842,11 +841,11 @@ $more: #424f7b;
         transition: all 0.3s linear;
       }
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         width: 14px;
         height: 14px;
-        background: url("../../assets/images/connection/arrowDown.svg");
+        background: url('../../assets/images/connection/arrowDown.svg');
         background-repeat: no-repeat;
         background-size: cover;
         top: -2px;
@@ -856,7 +855,7 @@ $more: #424f7b;
       }
       &_active {
         &:after {
-          content: "";
+          content: '';
           width: 20px;
           height: 20px;
           border-radius: 50%;
@@ -868,11 +867,11 @@ $more: #424f7b;
           transition: all 0.3s linear;
         }
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           width: 14px;
           height: 14px;
-          background: url("../../assets/images/connection/arrowUp.svg");
+          background: url('../../assets/images/connection/arrowUp.svg');
           background-repeat: no-repeat;
           background-size: cover;
           top: -3px;
